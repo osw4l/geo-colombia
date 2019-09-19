@@ -1,5 +1,4 @@
 import requests
-import unidecode
 import json
 import re
 
@@ -80,7 +79,7 @@ def run():
 
     print(_green(data))
 
-    with open('colombia.json', 'w') as json_file:
+    with open('outputs/colombia.json', 'w') as json_file:
         json.dump(data, json_file)
 
     print(_orange('Bye ;) informacion llena'))
