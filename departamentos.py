@@ -66,8 +66,10 @@ def run():
             _cyan(departamento),
         ))
 
-    with open('outputs/colombia_simple.json', 'w') as json_file:
-        json.dump(data, json_file)
+    print(_green(data))
+
+    with open('outputs/colombia_simple.json', 'w', encoding='utf8') as json_file:
+        json.dump(data, json_file, ensure_ascii=False)
 
     print(_orange('Bye ;) informacion llena'))
 
